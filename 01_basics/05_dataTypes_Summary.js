@@ -25,3 +25,5 @@
 //        Arrays  =>  object
 //        Function  =>  function
 //        Object  =>  object
+
+// Stack(used by all primitive type ) and Heap Memory (used by all non-primitive types)
