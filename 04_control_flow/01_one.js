@@ -28,8 +28,15 @@ if (balance > 500) console.log("test"); // Implicit scope
 
 const isuserLoggedIn = true;
 const debitCard = true;
-if (isuserLoggedIn && debitCard) {
+const loggedInFromGoogle = false;
+const loggedInFromEmail = true;
+
+if (isuserLoggedIn && debitCard && loggedInFromGoogle) {
   console.log("You can purchase item.");
 } else {
   console.log("You cant purchase item");
+}
+
+if (loggedInFromGoogle || loggedInFromEmail) {
+  console.log("User Logged In");
 }
