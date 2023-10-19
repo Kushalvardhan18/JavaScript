@@ -25,3 +25,11 @@ if (temperature < 50) {
 
 const balance = 1000;
 if (balance > 500) console.log("test"); // Implicit scope
+
+const isuserLoggedIn = true;
+const debitCard = true;
+if (isuserLoggedIn && debitCard) {
+  console.log("You can purchase item.");
+} else {
+  console.log("You cant purchase item");
+}
