@@ -39,5 +39,9 @@ const books = [
 // const userBooks = books.filter((bk) => bk.genre === "History");
 // console.log(userBooks);
 
-const userBooks = books.filter((item) => item.publish >= 1981);
+// const userBooks = books.filter((item) => item.publish >= 1981);
+const userBooks = books.filter((item) => {
+  // return item.publish >= 1981 ;
+  return item.publish >= 1981 && item.genre === "History";
+});
 console.log(userBooks);
