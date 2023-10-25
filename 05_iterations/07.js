@@ -7,7 +7,12 @@ const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 const newNums = myNums.map((num) => num + 10);
 console.log(newNums);
 
-const newNumb = myNums.map((num) => num * 10).map((num) => num + 1);
+// Chaining
+const newNumb = myNums
+  .map((num) => num * 10)
+  .map((num) => num + 1)
+  .filter((num) => num >= 40);
+console.log(newNumb);
 
 const books = [
   { title: "Book One", genre: "Fiction", publish: 1981, edition: 2004 },
