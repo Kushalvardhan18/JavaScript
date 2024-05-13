@@ -9,3 +9,16 @@ function displayPassiveSum(data) {
   console.log(" sum of numbers : " + data);
 }
 sumOfNum(4, 6, displayPassiveSum);
+
+//
+function square(a) {
+  return a * a;
+}
+
+function sumOfSquares(a, b) {
+  let val1 = square(a);
+  let val2 = square(b);
+  return val1 + val2;
+}
+
+console.log(sumOfSquares(2, 3));
