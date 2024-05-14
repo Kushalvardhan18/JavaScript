@@ -13,3 +13,14 @@ setTimeout(findSumTill100, 10000);
 console.log("Hello ");
 
 console.log("kushal");
+
+// fs.readFile
+
+const fs = require("fs");
+// filesystem module
+fs.readFile("a.txt", "utf-8", function (err, data) {
+  console.log(data);
+});
+
+console.log("hi kus");
+// Fetch
