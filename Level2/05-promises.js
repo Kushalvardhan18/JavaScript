@@ -6,3 +6,19 @@ let myPromise = new Promise((resolve, reject) => {
     reject("error");
   }
 });
+
+//
+const fs = require("fs");
+function ReadFile() {
+  return new Promise(function (resolve) {
+    fs.readFile("a.txt", "utf8", function (err, data) {
+      resolve(data);
+    });
+  });
+}
+
+function onDone(data) {
+  console.log(data);
+}
+
+ReadFile().then(onDone);
