@@ -7,6 +7,7 @@ let myPromise = new Promise((resolve, reject) => {
   }
 });
 
+const { log } = require("console");
 // Promise Object represent the eventual completion (or failure) of an asynchornous Operation and its resulting value.
 
 const fs = require("fs");
@@ -65,4 +66,24 @@ promiseFour
 
 // Five ---------------------------------------------------------------->
 
-const promiseFive = new Promise(function (resolve, reject) {});
+const promiseFive = new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    let error = true;
+    if (!error) {
+      resolve({ username: "javascript", password: "445 " });
+    } else {
+      reject("ERROR :JS Went Wrong.");
+    }
+  }, 2000);
+});
+
+async function consumePromiseFive() {
+  try {
+    const response = await promiseFive;
+    console.log(response);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+consumePromiseFive();
