@@ -89,6 +89,7 @@ async function consumePromiseFive() {
 consumePromiseFive();
 
 //
+// We have to import the fetch from node-fetch.
 const fetch = require("node-fetch");
 async function getAllUsers() {
   try {
