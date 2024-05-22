@@ -105,8 +105,8 @@ getAllUsers();
 
 // using then catch
 
-const fetch = require("node-fetch");
-fetch("https://jsonplaceholder.typicode.com/users")
+const fetch2 = require("node-fetch");
+fetch2("https://jsonplaceholder.typicode.com/users")
   .then((response) => {
     return response.json();
   })
