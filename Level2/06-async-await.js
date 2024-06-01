@@ -16,6 +16,7 @@ function kushalsAsyncfunction() {
 async function main() {
   //  no callbacks , no .then syntax
   let value = await kushalsAsyncfunction();
+  console.log("hi there");
   console.log(value);
 }
 
